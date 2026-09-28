@@ -4,7 +4,7 @@ export const siteConfig = {
   address: "宮崎県宮崎市桜町8-15",
   phone: "090-5748-1938",
   phoneHref: "tel:09057481938",
-  email: "naomi-19760128@ymobile.ne.jp",
+  email: "beautysalon703.naomi@gmail.com",
   hours: "7:00〜21:00",
   hoursNote: "ご希望の時間については、お気軽にご相談ください。",
   station: "神宮駅",
