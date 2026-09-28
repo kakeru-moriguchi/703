@@ -36,5 +36,4 @@ npm install
 npm run dev
 ```
 
-本番用の静的出力は `npm run build` で `dist/client/` に生成されます。
-
+Vercel向けの静的出力は `npm run build` で `out/` に生成されます。ChatGPT Sites向けの出力は `npm run build:sites` で `dist/client/` に生成されます。
