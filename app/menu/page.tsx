@@ -1,0 +1,5 @@
+import type { Metadata } from "next";
+import { Footer, Header, LineButton, PageHero } from "@/components/site-chrome";
+import { menuItems, siteConfig } from "@/lib/site-config";
+export const metadata: Metadata = { title: `メニュー・料金｜${siteConfig.name}`, description: "ビューティーサロン703のメニュー・料金案内。正式内容は掲載準備中です。" };
+export default function MenuPage() { return <><Header /><main><PageHero eyebrow="MENU & PRICE" title="メニュー・料金" lead="内容をご確認いただき、ご不明な点は気軽にご相談ください。" /><section className="content-section"><div className="content-heading"><span>01</span><h2>メニュー一覧</h2></div><div className="menu-list page-menu">{menuItems.length ? menuItems.map((item) => <article key={item.name} className="menu-row"><div><h3>{item.name}</h3><p>{item.description}</p></div><div><span>{item.duration}</span><strong>{item.price}</strong></div></article>) : <div className="empty-menu"><span>MENU LIST</span><p>正式な施術内容と料金は、ただいま掲載準備中です。<br />架空のメニューは掲載していません。</p></div>}</div></section><section className="mini-contact"><div><p className="eyebrow">CONSULTATION</p><h2>メニュー選びも、気軽にご相談ください。</h2></div><LineButton /></section></main><Footer /></>; }
