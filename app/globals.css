@@ -41,6 +41,12 @@ h2 { font-size: clamp(1.9rem, 3vw, 3.25rem); line-height: 1.55; letter-spacing: 
 a.line-button:hover { background: #18382d; transform: translateY(-2px); }
 .line-button small { display: block; font-size: .65rem; font-weight: 500; opacity: .72; margin-top: 1px; }
 .line-button.is-pending { background: #52675e; cursor: not-allowed; }
+.instagram-button { min-width: 220px; min-height: 58px; padding: 10px 24px; display: inline-flex; align-items: center; justify-content: center; gap: 11px; color: white; background: linear-gradient(120deg, #6b4cc7, #c64383 52%, #e99445); font-family: Arial, sans-serif; font-size: .9rem; font-weight: 700; letter-spacing: .05em; transition: opacity .2s ease, transform .2s ease; }
+a.instagram-button:hover { opacity: .9; transform: translateY(-2px); }
+.instagram-button__icon { width: 20px; height: 20px; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 6px; font-size: .7rem; line-height: 1; }
+.instagram-button small { margin-left: 3px; font-size: .6rem; font-weight: 400; opacity: .75; }
+.instagram-button.is-pending { filter: saturate(.55); cursor: not-allowed; }
+.instagram-button.is-compact { min-width: 150px; min-height: 44px; padding: 8px 17px; }
 .text-link { display: inline-flex; gap: 16px; align-items: center; border-bottom: 1px solid var(--botanical); padding: 7px 0; font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: .9rem; }
 .hero__photo { width: 100%; align-self: stretch; min-height: 520px; }
 .site-photo { margin: 0; position: relative; overflow: hidden; background: #dfe3d5; }
@@ -113,8 +119,9 @@ dd small { display: block; margin-top: 5px; color: var(--muted); font-size: .75r
 .sns-section { padding: 80px 28px; text-align: center; }
 .sns-section h2 { font-size: 1.5rem; }
 .sns-section p:last-child { font-family: "Hiragino Kaku Gothic ProN", sans-serif; color: var(--muted); }
+.sns-section .instagram-button { margin-top: 22px; }
 
-footer { padding: 75px clamp(28px, 8vw, 130px) 45px; display: grid; grid-template-columns: 1fr 1fr auto; align-items: end; gap: 30px; background: #17372c; color: #eef0e6; }
+footer { padding: 75px clamp(28px, 8vw, 130px) 45px; display: grid; grid-template-columns: 1fr 1fr auto auto; align-items: end; gap: 30px; background: #17372c; color: #eef0e6; }
 .brand--footer { color: #eef0e6; }
 footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font-size: .8rem; }
 .copyright { opacity: .62; }

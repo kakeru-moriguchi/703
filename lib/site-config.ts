@@ -10,6 +10,7 @@ export const siteConfig = {
   station: "神宮駅",
   parking: "あり",
   lineUrl: "https://lin.ee/npTpjen",
+  instagramUrl: "",
   socialLinks: [] as { label: string; url: string }[],
   canonicalUrl: "https://beauty-salon-703.hirochama-yu-ta-2515.chatgpt.site",
 } as const;

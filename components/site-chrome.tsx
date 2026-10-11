@@ -11,7 +11,7 @@ export function Header() {
 }
 
 export function Footer() {
-  return <><footer><a className="brand brand--footer" href="/"><span className="brand__number">703</span><span className="brand__text">BEAUTY SALON</span></a><p>{siteConfig.address}<br />営業時間 {siteConfig.hours}</p><p className="copyright">© Beauty Salon 703</p></footer><div className="mobile-sticky" aria-label="予約・お問い合わせ"><a href={siteConfig.phoneHref}>電話</a><LineButton compact /></div></>;
+  return <><footer><a className="brand brand--footer" href="/"><span className="brand__number">703</span><span className="brand__text">BEAUTY SALON</span></a><p>{siteConfig.address}<br />営業時間 {siteConfig.hours}</p><InstagramButton compact /><p className="copyright">© Beauty Salon 703</p></footer><div className="mobile-sticky" aria-label="予約・お問い合わせ"><a href={siteConfig.phoneHref}>電話</a><LineButton compact /></div></>;
 }
 
 export function PhotoPlaceholder({ label, note, className = "" }: { label: string; note: string; className?: string }) {
@@ -21,6 +21,13 @@ export function PhotoPlaceholder({ label, note, className = "" }: { label: strin
 export function LineButton({ compact = false }: { compact?: boolean }) {
   if (!siteConfig.lineUrl) return <span className={`line-button is-pending ${compact ? "is-compact" : ""}`} aria-disabled="true"><span>LINEで予約・相談</span><small>URL設定待ち</small></span>;
   return <a className={`line-button ${compact ? "is-compact" : ""}`} href={siteConfig.lineUrl} target="_blank" rel="noopener noreferrer">LINEで予約・相談</a>;
+}
+
+export function InstagramButton({ compact = false }: { compact?: boolean }) {
+  const className = `instagram-button ${compact ? "is-compact" : ""}`;
+  const content = <><span className="instagram-button__icon" aria-hidden="true">◎</span><span>Instagram</span></>;
+  if (!siteConfig.instagramUrl) return <span className={`${className} is-pending`} aria-disabled="true">{content}<small>URL準備中</small></span>;
+  return <a className={className} href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer">{content}</a>;
 }
 
 export function PageHero({ eyebrow, title, lead }: { eyebrow: string; title: string; lead: string }) {
