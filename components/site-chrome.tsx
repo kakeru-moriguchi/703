@@ -20,9 +20,10 @@ export function PhotoPlaceholder({ label, note, className = "" }: { label: strin
 
 export function LineButton({ compact = false }: { compact?: boolean }) {
   if (!siteConfig.lineUrl) return <span className={`line-button is-pending ${compact ? "is-compact" : ""}`} aria-disabled="true"><span>LINEで予約・相談</span><small>URL設定待ち</small></span>;
-  return <a className={`line-button ${compact ? "is-compact" : ""}`} href={siteConfig.lineUrl}>LINEで予約・相談</a>;
+  return <a className={`line-button ${compact ? "is-compact" : ""}`} href={siteConfig.lineUrl} target="_blank" rel="noopener noreferrer">LINEで予約・相談</a>;
 }
 
 export function PageHero({ eyebrow, title, lead }: { eyebrow: string; title: string; lead: string }) {
   return <section className="page-hero"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p>{lead}</p></section>;
 }
+

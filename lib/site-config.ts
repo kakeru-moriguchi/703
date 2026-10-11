@@ -9,7 +9,7 @@ export const siteConfig = {
   hoursNote: "ご希望の時間については、お気軽にご相談ください。",
   station: "神宮駅",
   parking: "あり",
-  lineUrl: "",
+  lineUrl: "https://lin.ee/npTpjen",
   socialLinks: [] as { label: string; url: string }[],
   canonicalUrl: "https://beauty-salon-703.hirochama-yu-ta-2515.chatgpt.site",
 } as const;
@@ -20,3 +20,4 @@ export const menuItems: MenuItem[] = [];
 export type PostSummary = { title: string; publishedAt: string; excerpt?: string; category?: string; image?: string };
 export const newsItems: PostSummary[] = [];
 export const blogItems: PostSummary[] = [];
+
