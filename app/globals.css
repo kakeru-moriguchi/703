@@ -286,7 +286,8 @@ footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font
   .hero__lead { margin: 26px 0 32px; font-size: .95rem; }
   .hero__actions { gap: 20px; }
   .hero__actions .line-button { width: 100%; }
-  .hero__photo { min-height: 400px; margin-left: 5%; width: 95%; }
+  .hero__photo { min-height: 0; margin: 0; width: 100%; }
+  .hero__photo img { height: auto; object-fit: contain; }
   .photo-placeholder figcaption { margin: 0 12px 12px; padding: 16px 18px; }
   .photo-placeholder::after { inset: 12px; }
   .introduction { grid-template-columns: 1fr; padding-left: 28px; padding-right: 28px; }
@@ -297,7 +298,8 @@ footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font
   .empty-menu span { font-size: 2rem; }
   .salon-section { padding: 86px 0 120px; }
   .salon-photos { grid-template-columns: 1fr; gap: 22px; }
-  .salon-photos__wide { min-height: 360px; margin-left: 28px; }
+  .salon-photos__wide { min-height: 0; margin: 0 28px; }
+  .salon-photos__wide img { height: auto; object-fit: contain; }
   .salon-photos__tall { min-height: 430px; margin: 0 28px 0 18%; transform: translateY(35px); }
   .salon-caption { margin-top: 70px; text-align: left; }
   .updates { grid-template-columns: 1fr; padding-left: 28px; padding-right: 28px; gap: 70px; }
