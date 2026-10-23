@@ -215,11 +215,6 @@ footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font
 .archive-empty p { margin-left: 60px; font-family: "Hiragino Kaku Gothic ProN", sans-serif; color: var(--muted); }
 .archive-section--news .archive-empty { background: var(--ivory); padding: 0 55px; }
 .page-access { min-height: 650px; }
-.photo-guide { padding: clamp(90px, 10vw, 145px) clamp(28px, 10vw, 165px); display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(45px, 9vw, 140px); align-items: center; }
-.photo-guide > div:first-child p:last-child { font-family: "Hiragino Kaku Gothic ProN", sans-serif; }
-.access-photo-placeholder { min-height: 400px; display: grid; place-items: center; background: #e1e5d9; border: 1px solid var(--line); color: var(--sage); text-align: center; font: .8rem/1.8 Arial, sans-serif; letter-spacing: .08em; }
-.access-landmark { min-height: 400px; }
-.access-landmark img { object-fit: cover; }
 .contact-choices { padding: clamp(90px, 11vw, 155px) clamp(28px, 10vw, 165px); display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(40px, 9vw, 140px); }
 .contact-choices__main { padding-right: clamp(0px, 5vw, 70px); border-right: 1px solid var(--line); }
 .contact-choices__main > p:not(.eyebrow), .contact-choices__sub p { font-family: "Hiragino Kaku Gothic ProN", sans-serif; }
@@ -268,7 +263,7 @@ footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font
   .access-section__map { min-height: 420px; }
   .page-hero { grid-template-columns: 1fr; }
   .page-hero h1 { grid-column: 1; grid-row: auto; }
-  .story-section, .content-section, .photo-guide, .contact-choices { grid-template-columns: 1fr; }
+  .story-section, .content-section, .contact-choices { grid-template-columns: 1fr; }
   .menu-category { grid-template-columns: 1fr; }
   .story-copy { padding-top: 0; }
   .content-section { gap: 25px; }
@@ -316,7 +311,7 @@ footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font
   .mobile-sticky .line-button { min-width: 0; min-height: 64px; padding: 6px 10px; }
   .page-hero { min-height: 350px; padding: 75px 28px 60px; }
   .page-hero h1 { margin-bottom: 25px; }
-  .story-section, .content-section, .archive-section, .photo-guide, .contact-choices { padding-left: 28px; padding-right: 28px; }
+  .story-section, .content-section, .archive-section, .contact-choices { padding-left: 28px; padding-right: 28px; }
   .mini-contact { align-items: flex-start; flex-direction: column; }
   .mini-contact .line-button { width: 100%; }
   .menu-feature, .bridal-menu { align-items: flex-start; flex-direction: column; }
@@ -331,8 +326,6 @@ footer p { margin: 0; font-family: "Hiragino Kaku Gothic ProN", sans-serif; font
   .archive-empty span { font-size: 3rem; }
   .archive-empty h2, .archive-empty p { margin-left: 0; }
   .archive-section--news .archive-empty { padding: 0 22px; }
-  .photo-guide { gap: 25px; }
-  .access-photo-placeholder { min-height: 280px; }
   .contact-note { grid-template-columns: 1fr; gap: 10px; }
   .home-split, .home-updates { grid-template-columns: 1fr; }
   .home-updates__blog { padding-top: 0; }
