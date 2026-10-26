@@ -12,7 +12,7 @@ export const siteConfig = {
   lineUrl: "https://lin.ee/npTpjen",
   instagramUrl: "https://www.instagram.com/beautysalon703.naomi",
   socialLinks: [] as { label: string; url: string }[],
-  canonicalUrl: "https://beauty-salon-703.hirochama-yu-ta-2515.chatgpt.site",
+  canonicalUrl: "https://703.kakeru-moriguchi0505.workers.dev",
 } as const;
 
 export type MenuItem = { name: string; description?: string; price?: string; duration?: string; image?: string };
@@ -21,4 +21,3 @@ export const menuItems: MenuItem[] = [];
 export type PostSummary = { title: string; publishedAt: string; excerpt?: string; category?: string; image?: string };
 export const newsItems: PostSummary[] = [];
 export const blogItems: PostSummary[] = [];
-
