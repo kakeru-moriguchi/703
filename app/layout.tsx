@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: { type: "website", locale: "ja_JP", title: siteConfig.name, description: "気軽に通える、ほっとできる。宮崎市桜町のビューティーサロン703。", siteName: siteConfig.name },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  verification: { google: "aweYXhlmPCZgxoVIjOSVC_y0YzvzdrhkiYeAHu8G9_c" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
